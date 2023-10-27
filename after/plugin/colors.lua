@@ -1,15 +1,14 @@
-
 require("tokyonight").setup({
     style = "moon",
 })
 
-function ColorMyPencils(color)
-	color = color or "tokyonight"
-	vim.cmd.colorscheme(color)
+function ChangeTheme(theme)
+	theme = theme or "tokyonight"
+	vim.cmd.colorscheme(theme)
 
 	-- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
 	-- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 
 end
 
-ColorMyPencils()
+ChangeTheme("tokyonight")
